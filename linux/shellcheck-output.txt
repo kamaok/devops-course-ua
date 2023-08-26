@@ -1,0 +1,7 @@
+
+In setup.sh line 12:
+source "$(dirname "$0")"/.env > /dev/null 2>&1 || true
+       ^--------------------^ SC1090: Can't follow non-constant source. Use a directive to specify location.
+
+For more information:
+  https://www.shellcheck.net/wiki/SC1090 -- Can't follow non-constant source....
